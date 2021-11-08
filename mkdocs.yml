@@ -1,1 +1,48 @@
+site_name: Python Guide
 
+repo_url: https://github.com/oliiiiiiiiiiiii/Python-Guide
+repo_name: Python-Guide
+edit_uri: ""
+
+nav:
+    - Home: index.md
+    - Programming Language: programming_language.md
+    - Introduction to python : python_introduction.md
+    - Installation : install.md
+    - Kicking Off : kicking_off.md
+    - Data-Handling : data.md
+    - Conditional : 
+    - Strings: strings.md
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font: false
+  features:
+    - navigation.sections
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - tables
