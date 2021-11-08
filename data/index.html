@@ -14,7 +14,7 @@
     
     
       
-        <title>Strings - Python Guide</title>
+        <title>Data-Handling - Python Guide</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#strings" class="md-skip">
+        <a href="#data-handling" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Strings
+              Data-Handling
             
           </span>
         </div>
@@ -298,21 +298,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../data/" class="md-nav__link">
-        Data-Handling
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -324,81 +309,25 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Strings
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Strings
+        Data-Handling
       </a>
       
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+    </li>
   
-  
-  
+
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#single-line-and-multi-line-strings" class="md-nav__link">
-    Single-line and Multi-line strings
-  </a>
-  
-    <nav class="md-nav" aria-label="Single-line and Multi-line strings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#single-line-strings" class="md-nav__link">
-    Single-line strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiline-line-strings" class="md-nav__link">
-    Multiline-line strings
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#using-type-function-on-a-string" class="md-nav__link">
-    Using type() function on a string
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#finding-length-of-a-string" class="md-nav__link">
-    Finding length of a string
-  </a>
+
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#string-index" class="md-nav__link">
-    String Index
-  </a>
   
-</li>
-      
-    </ul>
   
-</nav>
-      
+    <li class="md-nav__item">
+      <a href="../strings/" class="md-nav__link">
+        Strings
+      </a>
     </li>
   
 
@@ -422,62 +351,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#single-line-and-multi-line-strings" class="md-nav__link">
-    Single-line and Multi-line strings
-  </a>
-  
-    <nav class="md-nav" aria-label="Single-line and Multi-line strings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#single-line-strings" class="md-nav__link">
-    Single-line strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiline-line-strings" class="md-nav__link">
-    Multiline-line strings
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-type-function-on-a-string" class="md-nav__link">
-    Using type() function on a string
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-length-of-a-string" class="md-nav__link">
-    Finding length of a string
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#string-index" class="md-nav__link">
-    String Index
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -489,65 +362,7 @@
               
                 
                 
-                <h1 id="strings">Strings</h1>
-<p>Strings in python are a very essential datatype and other programming languages too, its a sequence of characters in python.</p>
-<hr>
-
-<h2 id="single-line-and-multi-line-strings">Single-line and Multi-line strings</h2>
-<h3 id="single-line-strings">Single-line strings</h3>
-<div class="highlight"><pre><span></span><code><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span> <span class="c1">#this is an example of a string, it uses &quot;&quot;</span>
-
-<span class="n">another_string</span> <span class="o">=</span> <span class="s1">&#39;Hi World&#39;</span> <span class="c1">#this is another example of a string, using &#39;&#39;</span>
-</code></pre></div>
-<h3 id="multiline-line-strings">Multiline-line strings</h3>
-<div class="highlight"><pre><span></span><code><span class="n">First_multiline_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Hello World </span><span class="se">\n</span><span class="s2"></span>
-<span class="s2">How are you doing</span>
-<span class="s2">&quot;&quot;&quot;</span> <span class="c1"># \n is a special character ( escape sequence character ).</span>
-
-<span class="n">Second_multiline_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Hi World </span><span class="se">\n</span><span class="s1"></span>
-<span class="s1">How are you doing</span>
-<span class="s1">&#39;&#39;&#39;</span>
-</code></pre></div>
-<hr>
-
-<h2 id="using-type-function-on-a-string">Using <code>type()</code> function on a string</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">another_string</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">First_multiline_string</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">Second_multiline_string</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
-</code></pre></div>
-<hr>
-
-<h2 id="finding-length-of-a-string">Finding length of a string</h2>
-<p>We can use the <code>len</code> function to find the length of a string.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-<span class="mi">11</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">another_string</span><span class="p">)</span>
-<span class="mi">8</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">First_multiline_string</span><span class="p">)</span>
-<span class="mi">32</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">Second_multiline_string</span><span class="p">)</span>
-<span class="mi">29</span>
-</code></pre></div>
-<hr>
-
-<h2 id="string-index">String Index</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#this is going to get the first character of the string</span>
-<span class="s1">&#39;H&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#this is going to get the second character of the string</span>
-<span class="s1">&#39;e&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="c1">#this is going to get the fifth character of the string</span>
-<span class="s1">&#39;o&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#this is going to get the last character of the string</span>
-<span class="s1">&#39;o&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="c1">#this is going to get the fifth character of the string from the first</span>
-<span class="s1">&#39;o&#39;</span>
-</code></pre></div>
+                <h1 id="data-handling">Data Handling</h1>
                 
               
               
@@ -567,7 +382,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data-Handling" rel="prev">
+        <a href="../kicking_off/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kicking Off" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -576,11 +391,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data-Handling
+              Kicking Off
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../strings/" class="md-footer__link md-footer__link--next" aria-label="Next: Strings" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Strings
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
