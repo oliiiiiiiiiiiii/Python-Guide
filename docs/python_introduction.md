@@ -8,3 +8,14 @@ Python based on usage index is a very popular language, it is second most used a
 
 Python has wide application in `web development`, `AI`, `machine learning`, `operating systems`, `mobile application development`, `data science` and `game development` etc.
 <hr>
+
+# Usefull links :
+
+<a href="https://www.python.org/">Python Official Site</a>
+
+<a href="https://github.com/python/cpython">Cpython github repository</a>
+
+<a href="https://docs.python.org/3/">Python Documentation</a>
+
+<a href="https://www.python.org/dev/peps/">Python Enhancement Proposals</a>
+

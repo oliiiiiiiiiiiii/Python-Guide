@@ -65,7 +65,7 @@ Arithmetic Operators : `+`, `-`, `/`, `*`, `**`, `//`, `%`.
 
 Relational (Comparision) Operators :  `>`, `<` `==`, `>=`, `<=`, `!=`.
 
-Assignment Operators : `=`
+Assignment Operators : `=`, `:=`
 
 Augmented Operators : `+=`, `-=`, `/=`, `*=`, `//=`, `%=`, `**=`.
 
