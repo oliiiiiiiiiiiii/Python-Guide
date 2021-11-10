@@ -11,7 +11,7 @@ nav:
     - Installation : install.md
     - Kicking Off : kicking_off.md
     - Data-Handling : data.md
-    - Conditional : 
+    - Conditional : conditional.md
     - Strings: strings.md
 
 theme:
