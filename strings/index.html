@@ -313,6 +313,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../conditional/" class="md-nav__link">
+        Conditional
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -389,9 +404,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#string-index" class="md-nav__link">
-    String Index
+  <a href="#string-indexing-and-string-slicing" class="md-nav__link">
+    String Indexing and String Slicing
   </a>
+  
+    <nav class="md-nav" aria-label="String Indexing and String Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-indexing" class="md-nav__link">
+    String Indexing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -470,9 +498,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#string-index" class="md-nav__link">
-    String Index
+  <a href="#string-indexing-and-string-slicing" class="md-nav__link">
+    String Indexing and String Slicing
   </a>
+  
+    <nav class="md-nav" aria-label="String Indexing and String Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-indexing" class="md-nav__link">
+    String Indexing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -535,7 +576,8 @@
 </code></pre></div>
 <hr>
 
-<h2 id="string-index">String Index</h2>
+<h2 id="string-indexing-and-string-slicing">String Indexing and String Slicing</h2>
+<h3 id="string-indexing">String Indexing</h3>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#this is going to get the first character of the string</span>
 <span class="s1">&#39;H&#39;</span>
@@ -546,8 +588,49 @@
 <span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#this is going to get the last character of the string</span>
 <span class="s1">&#39;o&#39;</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">text</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="c1">#this is going to get the fifth character of the string from the first</span>
-<span class="s1">&#39;o&#39;</span>
+<span class="s1">&#39;H&#39;</span>
 </code></pre></div>
+<table>
+<thead>
+<tr>
+<th>0 and Positive indexing :</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word :</td>
+<td>H</td>
+<td>e</td>
+<td>l</td>
+<td>l</td>
+<td>o</td>
+</tr>
+<tr>
+<td>Negative Indexing :</td>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<p>String Indexing starts from <code>0</code> and goes upto <code>(length of string - 1)</code>.</p>
+<p>Negative indexing starts from <code>-(length of string)</code> upto <code>-1</code></p>
+<p>Lets see another example : </p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;Python is a very popular language&quot;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="s1">&#39;P&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;Python was created by Guido Van Rossum&quot;</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s1">&#39;m&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;Python has a very easy syntax&quot;</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span>
+<span class="s1">&#39;v&#39;</span>
+</code></pre></div>
+<hr>
                 
               
               
@@ -567,7 +650,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data-Handling" rel="prev">
+        <a href="../conditional/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Conditional" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -576,7 +659,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data-Handling
+              Conditional
             </div>
           </div>
         </a>

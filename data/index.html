@@ -309,10 +309,96 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data-Handling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Data-Handling
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#truth-values" class="md-nav__link">
+    Truth Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Logical Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not-operator" class="md-nav__link">
+    not Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-operator" class="md-nav__link">
+    or Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-operator" class="md-nav__link">
+    and operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-errors-which-do-not-show-up" class="md-nav__link">
+    Some Errors which do not show up
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditional/" class="md-nav__link">
+        Conditional
+      </a>
     </li>
   
 
@@ -351,6 +437,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#truth-values" class="md-nav__link">
+    Truth Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Logical Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not-operator" class="md-nav__link">
+    not Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-operator" class="md-nav__link">
+    or Operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-operator" class="md-nav__link">
+    and operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#some-errors-which-do-not-show-up" class="md-nav__link">
+    Some Errors which do not show up
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -363,6 +505,81 @@
                 
                 
                 <h1 id="data-handling">Data Handling</h1>
+<h2 id="truth-values">Truth Values</h2>
+<p>Truth values are basically logical values of some data.</p>
+<p>It can have either of two values : <code>True</code> / <code>False</code></p>
+<p>In python, except : <code>False</code>, <code>""</code>, <code>''</code>, <code>''''''</code>, <code>""""""</code>, <code>None</code>, <code>0</code>, <code>{}</code>, <code>[]</code> and <code>()</code> have a truth value as <code>False</code>.</p>
+<p>Truth Value of some data can be found out using <code>bool(x)</code>, where <code>x</code> is some data.</p>
+<p>Lets test it out :</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="mf">3.56</span><span class="p">)</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">97</span><span class="p">])</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">({})</span>
+<span class="kc">False</span>
+</code></pre></div>
+<hr>
+
+<h2 id="logical-operators">Logical Operators</h2>
+<p>As discussed earlier the logical operators in python are : <code>and</code>, <code>or</code>, <code>not</code>.</p>
+<h3 id="not-operator"><code>not</code> Operator</h3>
+<p>is the inverse operator it will invert every result (True becomes False and False Becomes True).</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="ow">not</span> <span class="kc">True</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="ow">not</span> <span class="kc">False</span>
+<span class="kc">True</span>
+</code></pre></div>
+<h3 id="or-operator"><code>or</code> Operator</h3>
+<p>Is an operator which returns <code>True</code> if either of the conditions specified is <code>True</code>.
+If both conditions specified are <code>False</code> then it returns <code>False</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="ow">or</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">1</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">20</span> <span class="ow">or</span> <span class="mi">11</span> <span class="o">&gt;</span> <span class="mi">200</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="c1">#it will return True even if both conditions specified are True</span>
+<span class="kc">True</span>
+</code></pre></div>
+<h3 id="and-operator"><code>and</code> operator</h3>
+<p>Returns <code>True</code> only if both conditions are <code>True</code> otherwise it will return <code>False</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">1</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">200</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="mi">500</span> <span class="o">!=</span> <span class="mi">21</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="ow">and</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<span class="kc">True</span>
+</code></pre></div>
+<h3 id="some-errors-which-do-not-show-up">Some Errors which do not show up</h3>
+<p>These errors would show up when used individually but they are not read by python because :</p>
+<p>(i) the <code>or</code> operator only reads the second condition if the first condition is <code>True</code></p>
+<div class="highlight"><pre><span></span><code><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="c1">#a and b are not defined yet we are comparing them</span>
+<span class="kc">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1">#no errors</span>
+</code></pre></div>
+<p>(ii) the <code>and</code> operator only reads the second condition if the second condition is <code>False</code></p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>
+<span class="kc">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1">#no errors yet again</span>
+</code></pre></div>
+<p>Lets confirm  that they do give errors if used individually:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;a&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;a&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</code></pre></div>
                 
               
               
@@ -398,13 +615,13 @@
       
       
         
-        <a href="../strings/" class="md-footer__link md-footer__link--next" aria-label="Next: Strings" rel="next">
+        <a href="../conditional/" class="md-footer__link md-footer__link--next" aria-label="Next: Conditional" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Strings
+              Conditional
             </div>
           </div>
           <div class="md-footer__button md-icon">
