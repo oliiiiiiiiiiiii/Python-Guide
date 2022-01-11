@@ -1,4 +1,4 @@
-# Basic Python:
+# Kicking Off:
 
 ## DATATYPES
 <hr>
